@@ -31,6 +31,7 @@ Partial Class AgregarPelicula
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,11 +47,11 @@ Partial Class AgregarPelicula
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(255, 225)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(237, 43)
+        Me.Label3.Size = New System.Drawing.Size(210, 39)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Link Pelicula"
         '
@@ -70,7 +71,7 @@ Partial Class AgregarPelicula
         Me.Button1.FlatAppearance.BorderSize = 3
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("League Spartan", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(268, 450)
         Me.Button1.Name = "Button1"
@@ -82,11 +83,11 @@ Partial Class AgregarPelicula
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(244, 330)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(258, 43)
+        Me.Label2.Size = New System.Drawing.Size(218, 39)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Link Caratula"
         '
@@ -113,20 +114,29 @@ Partial Class AgregarPelicula
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(219, 128)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(308, 43)
+        Me.Label4.Size = New System.Drawing.Size(268, 39)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Nombre Pelicula"
         '
-        'addmovie
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(346, 497)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(0, 19)
+        Me.Label5.TabIndex = 15
+        '
+        'AgregarPelicula
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox1)
@@ -140,7 +150,7 @@ Partial Class AgregarPelicula
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "addmovie"
+        Me.Name = "AgregarPelicula"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "addmovie"
         Me.ResumeLayout(False)
@@ -156,4 +166,5 @@ Partial Class AgregarPelicula
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

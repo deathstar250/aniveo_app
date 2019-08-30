@@ -4,7 +4,7 @@
         connection = New Npgsql.NpgsqlConnection()
 
         Dim connectionString As String
-        connectionString = "Server=127.0.0.1;Port=4444;Database=ANIVEO;User Id=postgres;Password=root;"
+        connectionString = "Server=127.0.0.1;Port=54378;Database=ANIVEO;User Id=postgres;Password=root;"
         Try
             connection.ConnectionString = connectionString
             connection.Open()

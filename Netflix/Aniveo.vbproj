@@ -113,6 +113,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\nuevaPelicula.vb" />
+    <Compile Include="Clases\nuevaSerie.vb" />
     <Compile Include="Clases\nuevoUsuario.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
