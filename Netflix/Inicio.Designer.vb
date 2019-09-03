@@ -29,6 +29,7 @@ Partial Class Inicio
         Me.usuariotxt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Contra = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,7 +39,7 @@ Partial Class Inicio
         Me.Button1.FlatAppearance.BorderSize = 3
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("League Spartan", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(564, 510)
         Me.Button1.Name = "Button1"
@@ -60,17 +61,17 @@ Partial Class Inicio
         'Nombre
         '
         Me.Nombre.AutoSize = True
-        Me.Nombre.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Nombre.Location = New System.Drawing.Point(593, 240)
+        Me.Nombre.Location = New System.Drawing.Point(597, 243)
         Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(155, 43)
+        Me.Nombre.Size = New System.Drawing.Size(135, 39)
         Me.Nombre.TabIndex = 3
         Me.Nombre.Text = "Usuario"
         '
         'usuariotxt
         '
-        Me.usuariotxt.BackColor = System.Drawing.SystemColors.MenuText
+        Me.usuariotxt.BackColor = System.Drawing.SystemColors.MenuBar
         Me.usuariotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.usuariotxt.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.usuariotxt.Location = New System.Drawing.Point(555, 285)
@@ -81,17 +82,17 @@ Partial Class Inicio
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(555, 360)
+        Me.Label1.Location = New System.Drawing.Point(577, 363)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(225, 43)
+        Me.Label1.Size = New System.Drawing.Size(193, 39)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Contraseña"
         '
         'Contra
         '
-        Me.Contra.BackColor = System.Drawing.SystemColors.MenuText
+        Me.Contra.BackColor = System.Drawing.SystemColors.MenuBar
         Me.Contra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Contra.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.Contra.Location = New System.Drawing.Point(555, 405)
@@ -100,6 +101,14 @@ Partial Class Inicio
         Me.Contra.Size = New System.Drawing.Size(225, 23)
         Me.Contra.TabIndex = 6
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(649, 561)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 13)
+        Me.Label2.TabIndex = 7
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -107,6 +116,7 @@ Partial Class Inicio
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Contra)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.usuariotxt)
@@ -131,4 +141,5 @@ Partial Class Inicio
     Friend WithEvents usuariotxt As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Contra As TextBox
+    Friend WithEvents Label2 As Label
 End Class

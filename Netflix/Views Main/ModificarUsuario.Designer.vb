@@ -36,6 +36,7 @@ Partial Class ModificarUsuario
         Me.txtCorreoNuevoUsuario = New System.Windows.Forms.TextBox()
         Me.cbxModificarUsuario = New System.Windows.Forms.ComboBox()
         Me.lblModificarUsuario = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -172,12 +173,21 @@ Partial Class ModificarUsuario
         Me.lblModificarUsuario.TabIndex = 52
         Me.lblModificarUsuario.Text = "Usuario a modificar"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(576, 464)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 19)
+        Me.Label2.TabIndex = 65
+        '
         'ModificarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(843, 705)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtFechaNacimientoUsuario)
         Me.Controls.Add(Me.lblFechaNacimientoUsuario)
         Me.Controls.Add(Me.txtApellidoNuevoUsuario)
@@ -218,4 +228,5 @@ Partial Class ModificarUsuario
     Friend WithEvents txtCorreoNuevoUsuario As TextBox
     Friend WithEvents cbxModificarUsuario As ComboBox
     Friend WithEvents lblModificarUsuario As Label
+    Friend WithEvents Label2 As Label
 End Class

@@ -45,7 +45,7 @@ Partial Class AgregarSerie
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.MenuText
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.TextBox1.Location = New System.Drawing.Point(249, 384)
@@ -81,7 +81,7 @@ Partial Class AgregarSerie
         '
         'usuariotxt
         '
-        Me.usuariotxt.BackColor = System.Drawing.SystemColors.MenuText
+        Me.usuariotxt.BackColor = System.Drawing.SystemColors.Menu
         Me.usuariotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.usuariotxt.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.usuariotxt.Location = New System.Drawing.Point(250, 176)
@@ -113,7 +113,7 @@ Partial Class AgregarSerie
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.MenuText
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.TextBox2.Location = New System.Drawing.Point(250, 272)

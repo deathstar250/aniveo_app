@@ -57,7 +57,7 @@ Partial Class AgregarPelicula
         '
         'usuariotxt
         '
-        Me.usuariotxt.BackColor = System.Drawing.SystemColors.MenuText
+        Me.usuariotxt.BackColor = System.Drawing.SystemColors.Menu
         Me.usuariotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.usuariotxt.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.usuariotxt.Location = New System.Drawing.Point(259, 270)
@@ -93,7 +93,7 @@ Partial Class AgregarPelicula
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.MenuText
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.TextBox1.Location = New System.Drawing.Point(259, 375)
@@ -103,7 +103,7 @@ Partial Class AgregarPelicula
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.MenuText
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Menu
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 10.25!)
         Me.TextBox2.Location = New System.Drawing.Point(259, 176)

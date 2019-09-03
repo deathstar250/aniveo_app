@@ -42,6 +42,7 @@ Partial Class ModificarSerie
         Me.txtCalificacionSerie = New System.Windows.Forms.TextBox()
         Me.lblRepartoSerie = New System.Windows.Forms.Label()
         Me.txtRepartoSerie = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -236,12 +237,21 @@ Partial Class ModificarSerie
         Me.txtRepartoSerie.Size = New System.Drawing.Size(368, 96)
         Me.txtRepartoSerie.TabIndex = 32
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(393, 691)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 19)
+        Me.Label2.TabIndex = 33
+        '
         'ModificarSerie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(843, 705)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtRepartoSerie)
         Me.Controls.Add(Me.lblRepartoSerie)
         Me.Controls.Add(Me.txtCalificacionSerie)
@@ -294,4 +304,5 @@ Partial Class ModificarSerie
     Friend WithEvents txtCalificacionSerie As TextBox
     Friend WithEvents lblRepartoSerie As Label
     Friend WithEvents txtRepartoSerie As TextBox
+    Friend WithEvents Label2 As Label
 End Class

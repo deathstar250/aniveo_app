@@ -26,6 +26,7 @@ Partial Class BorrarUsuario
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cbxUsuarioEliminar = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -72,12 +73,21 @@ Partial Class BorrarUsuario
         Me.cbxUsuarioEliminar.Size = New System.Drawing.Size(415, 26)
         Me.cbxUsuarioEliminar.TabIndex = 11
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(330, 383)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 19)
+        Me.Label2.TabIndex = 13
+        '
         'BorrarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cbxUsuarioEliminar)
         Me.Controls.Add(Me.Label3)
@@ -98,4 +108,5 @@ Partial Class BorrarUsuario
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents cbxUsuarioEliminar As ComboBox
+    Friend WithEvents Label2 As Label
 End Class
