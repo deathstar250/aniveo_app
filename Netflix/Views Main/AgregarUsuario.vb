@@ -47,7 +47,7 @@
             cmd.Connection = connection
 
 
-            Dim commandString = "insert into usuario (nombre_usuario, nombre, apellido, contrasenia, correo, fecha_nac) values(@nombre_usuario,@nombre,@apellido,@contrasenia,@correo,@fechaNacimiento)"
+            Dim commandString = "insert into usuario (nombre_usr, nombre, apellido, contraseña, correo, fecha_nac) values(@nombre_usuario,@nombre,@apellido,@contrasenia,@correo,@fechaNacimiento)"
 
             cmd.CommandText = commandString
 

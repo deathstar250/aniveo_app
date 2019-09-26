@@ -24,8 +24,9 @@ Partial Class BorrarUsuario
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.cbxUsuarioEliminar = New System.Windows.Forms.ComboBox()
+        Me.lblInfo = New System.Windows.Forms.Label()
+        Me.txtUsuarioAEliminar = New System.Windows.Forms.TextBox()
+        Me.lblInfo2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,24 +54,31 @@ Partial Class BorrarUsuario
         Me.Button1.Text = "Eliminar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label3
+        'lblInfo
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(132, 140)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(474, 39)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Seleccionar usuario a eliminar"
+        Me.lblInfo.AutoSize = True
+        Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.lblInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.lblInfo.Location = New System.Drawing.Point(132, 140)
+        Me.lblInfo.Name = "lblInfo"
+        Me.lblInfo.Size = New System.Drawing.Size(474, 39)
+        Me.lblInfo.TabIndex = 10
+        Me.lblInfo.Text = "Seleccionar usuario a eliminar"
         '
-        'cbxUsuarioEliminar
+        'txtUsuarioAEliminar
         '
-        Me.cbxUsuarioEliminar.FormattingEnabled = True
-        Me.cbxUsuarioEliminar.Location = New System.Drawing.Point(170, 247)
-        Me.cbxUsuarioEliminar.Name = "cbxUsuarioEliminar"
-        Me.cbxUsuarioEliminar.Size = New System.Drawing.Size(415, 26)
-        Me.cbxUsuarioEliminar.TabIndex = 11
+        Me.txtUsuarioAEliminar.Location = New System.Drawing.Point(259, 249)
+        Me.txtUsuarioAEliminar.Name = "txtUsuarioAEliminar"
+        Me.txtUsuarioAEliminar.Size = New System.Drawing.Size(206, 26)
+        Me.txtUsuarioAEliminar.TabIndex = 13
+        '
+        'lblInfo2
+        '
+        Me.lblInfo2.AutoSize = True
+        Me.lblInfo2.Location = New System.Drawing.Point(330, 298)
+        Me.lblInfo2.Name = "lblInfo2"
+        Me.lblInfo2.Size = New System.Drawing.Size(0, 19)
+        Me.lblInfo2.TabIndex = 14
         '
         'BorrarUsuario
         '
@@ -78,9 +86,10 @@ Partial Class BorrarUsuario
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.lblInfo2)
+        Me.Controls.Add(Me.txtUsuarioAEliminar)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.cbxUsuarioEliminar)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -96,6 +105,7 @@ Partial Class BorrarUsuario
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents cbxUsuarioEliminar As ComboBox
+    Friend WithEvents lblInfo As Label
+    Friend WithEvents txtUsuarioAEliminar As TextBox
+    Friend WithEvents lblInfo2 As Label
 End Class
