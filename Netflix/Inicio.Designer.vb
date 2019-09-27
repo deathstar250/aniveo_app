@@ -26,9 +26,10 @@ Partial Class Inicio
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Nombre = New System.Windows.Forms.Label()
-        Me.usuariotxt = New System.Windows.Forms.TextBox()
+        Me.txtUsuarioIngresado = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Contra = New System.Windows.Forms.TextBox()
+        Me.txtContraseñaIngresada = New System.Windows.Forms.TextBox()
+        Me.lblError = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,7 +39,7 @@ Partial Class Inicio
         Me.Button1.FlatAppearance.BorderSize = 3
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("League Spartan", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(564, 510)
         Me.Button1.Name = "Button1"
@@ -60,45 +61,56 @@ Partial Class Inicio
         'Nombre
         '
         Me.Nombre.AutoSize = True
-        Me.Nombre.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Nombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Nombre.Location = New System.Drawing.Point(593, 240)
+        Me.Nombre.Location = New System.Drawing.Point(607, 243)
         Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(155, 43)
+        Me.Nombre.Size = New System.Drawing.Size(135, 39)
         Me.Nombre.TabIndex = 3
         Me.Nombre.Text = "Usuario"
         '
-        'usuariotxt
+        'txtUsuarioIngresado
         '
-        Me.usuariotxt.BackColor = System.Drawing.SystemColors.MenuText
-        Me.usuariotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.usuariotxt.Font = New System.Drawing.Font("Arial", 10.25!)
-        Me.usuariotxt.Location = New System.Drawing.Point(555, 285)
-        Me.usuariotxt.Name = "usuariotxt"
-        Me.usuariotxt.Size = New System.Drawing.Size(225, 23)
-        Me.usuariotxt.TabIndex = 4
+        Me.txtUsuarioIngresado.BackColor = System.Drawing.SystemColors.InactiveCaptionText
+        Me.txtUsuarioIngresado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtUsuarioIngresado.Font = New System.Drawing.Font("Arial", 10.25!)
+        Me.txtUsuarioIngresado.ForeColor = System.Drawing.SystemColors.MenuBar
+        Me.txtUsuarioIngresado.Location = New System.Drawing.Point(555, 285)
+        Me.txtUsuarioIngresado.Name = "txtUsuarioIngresado"
+        Me.txtUsuarioIngresado.Size = New System.Drawing.Size(225, 23)
+        Me.txtUsuarioIngresado.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("League Spartan", 25.0!)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(555, 360)
+        Me.Label1.Location = New System.Drawing.Point(577, 351)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(225, 43)
+        Me.Label1.Size = New System.Drawing.Size(193, 39)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Contraseña"
         '
-        'Contra
+        'txtContraseñaIngresada
         '
-        Me.Contra.BackColor = System.Drawing.SystemColors.MenuText
-        Me.Contra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Contra.Font = New System.Drawing.Font("Arial", 10.25!)
-        Me.Contra.Location = New System.Drawing.Point(555, 405)
-        Me.Contra.Name = "Contra"
-        Me.Contra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9787)
-        Me.Contra.Size = New System.Drawing.Size(225, 23)
-        Me.Contra.TabIndex = 6
+        Me.txtContraseñaIngresada.BackColor = System.Drawing.SystemColors.MenuText
+        Me.txtContraseñaIngresada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtContraseñaIngresada.Font = New System.Drawing.Font("Arial", 10.25!)
+        Me.txtContraseñaIngresada.ForeColor = System.Drawing.SystemColors.MenuBar
+        Me.txtContraseñaIngresada.Location = New System.Drawing.Point(555, 405)
+        Me.txtContraseñaIngresada.Name = "txtContraseñaIngresada"
+        Me.txtContraseñaIngresada.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9787)
+        Me.txtContraseñaIngresada.Size = New System.Drawing.Size(225, 23)
+        Me.txtContraseñaIngresada.TabIndex = 6
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.ForeColor = System.Drawing.Color.Yellow
+        Me.lblError.Location = New System.Drawing.Point(643, 466)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 13)
+        Me.lblError.TabIndex = 7
         '
         'Inicio
         '
@@ -107,12 +119,14 @@ Partial Class Inicio
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1280, 720)
-        Me.Controls.Add(Me.Contra)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.txtContraseñaIngresada)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.usuariotxt)
+        Me.Controls.Add(Me.txtUsuarioIngresado)
         Me.Controls.Add(Me.Nombre)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
+        Me.ForeColor = System.Drawing.Color.Yellow
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Inicio"
@@ -128,7 +142,8 @@ Partial Class Inicio
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Nombre As Label
-    Friend WithEvents usuariotxt As TextBox
+    Friend WithEvents txtUsuarioIngresado As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Contra As TextBox
+    Friend WithEvents txtContraseñaIngresada As TextBox
+    Friend WithEvents lblError As Label
 End Class

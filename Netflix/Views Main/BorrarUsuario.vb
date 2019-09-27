@@ -36,11 +36,9 @@
         Dim cmd = New Npgsql.NpgsqlCommand()
         cmd.Connection = connection
 
-
         Dim commandString = "delete from usuario where nombre_usr = @nombre_usr"
 
-
-        cmd.Parameters.Add("@nombre_usr", NpgsqlTypes.NpgsqlDbType.Varchar, 20)
+        cmd.Parameters.Add("@nombre_usr", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = usuarioAEliminar
 
 
         cmd.CommandText = commandString

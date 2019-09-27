@@ -427,7 +427,6 @@ C:\Users\Alumno\aniveo_app\Netflix\obj\Debug\Aniveo.vbproj.CopyComplete
 C:\Users\Alumno\aniveo_app\Netflix\obj\Debug\Aniveo.exe
 C:\Users\Alumno\aniveo_app\Netflix\obj\Debug\Netflix.xml
 C:\Users\Alumno\aniveo_app\Netflix\obj\Debug\Aniveo.pdb
-C:\Users\Alumno\Desktop\Project\ANIVEO APP\aniveo_app\Netflix\obj\Debug\Aniveo.vbprojAssemblyReference.cache
 C:\Users\Alumno\Desktop\Project\ANIVEO APP\aniveo_app\Netflix\obj\Debug\Aniveo.exe.config
 C:\Users\Alumno\Desktop\Project\ANIVEO APP\aniveo_app\Netflix\obj\Debug\Aniveo.Form1.resources
 C:\Users\Alumno\Desktop\Project\ANIVEO APP\aniveo_app\Netflix\obj\Debug\Aniveo.Inicio.resources
