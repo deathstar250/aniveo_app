@@ -1,63 +1,106 @@
 ﻿Public Class AgregarPelicula
-    'Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-    '    Me.Close()
-    'End Sub
 
-    'Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-    '    'Dim nombrePelicula As String
-    '    'Dim linkPelicula As String
-    '    'Dim linkCaratula As String
-    '    'Try
-    '    '    Try
-    '    '        nombrePelicula = TextBox2.Text
-    '    '        linkPelicula = usuariotxt.Text
-    '    '        linkCaratula = TextBox1.Text
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+
+            Dim _id As Integer = traerID() + 1
+            Dim _titulo As String = txtNombrePelicula.Text
+            Dim _genero As String = txtGenero.Text
+            Dim _duracion_minutos As Integer = txtDuracionMinutos.Text
+            Dim _duracion_segundos As Integer = txtDuracionSegundos.Text
+            Dim _link As String = txtLink.Text
+            Dim _sinopsis As String = txtSinopsis.Text
+            Dim _calificacion_id As Integer = txtCalificacion.Text
+            Dim _reparto As String = txtReparto.Text
+            Dim _fecha_estreno As Date
+
+            Try
+                _fecha_estreno = calendar.SelectionRange.Start
+            Catch ex As Exception
+                lblError.Text = ex.Message
+            End Try
+
+            Dim contenido = New agregarContenido(_id, _titulo, _genero, _duracion_minutos, _duracion_segundos, _link, _sinopsis, _calificacion_id, _reparto, _fecha_estreno)
 
 
-    '    '    Catch ex As Exception
-    '    '        Label5.Text = ex.Message
-    '    '    End Try
 
 
-    '    '    Dim Pelicula As New agregarContenido(nombrePelicula, linkPelicula, linkCaratula)
-    '    '    Dim connectionClass = New Connection_PgSQL
-    '    '    Dim connection = New Npgsql.NpgsqlConnection()
-    '    '    connection = connectionClass.OpenConnection()
 
-    '    '    Dim cmd = New Npgsql.NpgsqlCommand()
-    '    '    cmd.Connection = connection
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Function traerID()
+
+        Try
+            Dim clasecnn = New Connection_PgSQL
+            Dim conexion As New Npgsql.NpgsqlConnection()
+            conexion = clasecnn.OpenConnection()
+            Dim cmd = New Npgsql.NpgsqlCommand()
+            cmd.Connection = conexion
+            Dim commandString = " select count(*) from contenido"
+
+            Dim id As Integer
+
+            cmd.CommandText = commandString
+
+            Dim lector As Npgsql.NpgsqlDataReader
+            lector = cmd.ExecuteReader
+
+            If lector.HasRows Then
+
+                lector.Read()
+                id = lector(0).ToString
+
+                lector.Close()
+                cmd.Parameters.Clear()
+                lblError.Text = id
+            End If
 
 
-    '    '    Dim commandString = "insert into usuario (nombrePelicula, linkPelicula, linkContenido) values(@nombrePelicula, @linkPelicula, @linkContenido)"
+        Catch ex As Exception
+            lblError.Text = ex.Message
+        End Try
 
-    '    '    cmd.CommandText = commandString
 
-    '    '    cmd.Parameters.Add("@nombrePelicula", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = Pelicula.nombrePelicula
-    '    '    cmd.Parameters.Add("@linkPelicula", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = Pelicula.linkPelicula
-    '    '    cmd.Parameters.Add("@linkCaratula", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = Pelicula.linkCaratula
+    End Function
 
-    '    '    Dim resultado As Integer
 
-    '    '    resultado = cmd.ExecuteNonQuery()
+    Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
+        Button1.ForeColor = System.Drawing.Color.DimGray
 
-    '    '    If (resultado >= 0) Then
-    '    '        Label5.Text = "Enhorabuena, pelicula creada correctamente"
-    '    '    Else
-    '    '        Label5.Text = "Le has errado al bizcochardo"
-    '    '    End If
+    End Sub
+    Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
+        Button1.ForeColor = Color.FromArgb(214, 175, 26)
 
-    '    'Catch ex As Exception
+    End Sub
 
-    '    'End Try
-    'End Sub
+    Private Sub AgregarPelicula_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    'Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
-    '    Button1.ForeColor = System.Drawing.Color.DimGray
+    End Sub
 
-    'End Sub
-    'Private Sub Button1_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
-    '    Button1.ForeColor = Color.FromArgb(214, 175, 26)
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
-    'End Sub
+    End Sub
 
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub txtSinopsis_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub txtCalificacion_TextChanged(sender As Object, e As EventArgs) Handles txtCalificacion.TextChanged
+
+    End Sub
 End Class

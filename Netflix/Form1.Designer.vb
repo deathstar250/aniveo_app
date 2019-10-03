@@ -30,15 +30,16 @@ Partial Class Form1
         Me.AgregarPeliculaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarPeliculaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarPeliculaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SeriesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Useresq = New System.Windows.Forms.Label()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +47,7 @@ Partial Class Form1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.MenuStrip1.Font = New System.Drawing.Font("Arial Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AplicacionToolStripMenuItem, Me.PeliculaToolStripMenuItem, Me.SeriesToolStripMenuItem, Me.UsuariosToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AplicacionToolStripMenuItem, Me.PeliculaToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.ToolStripMenuItem3})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1280, 25)
@@ -70,65 +71,36 @@ Partial Class Form1
         '
         'PeliculaToolStripMenuItem
         '
-        Me.PeliculaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPeliculaToolStripMenuItem, Me.EliminarPeliculaToolStripMenuItem, Me.ModificarPeliculaToolStripMenuItem})
+        Me.PeliculaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarPeliculaToolStripMenuItem, Me.EliminarPeliculaToolStripMenuItem, Me.ToolStripMenuItem1, Me.ModificarPeliculaToolStripMenuItem})
         Me.PeliculaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.PeliculaToolStripMenuItem.Name = "PeliculaToolStripMenuItem"
-        Me.PeliculaToolStripMenuItem.Size = New System.Drawing.Size(73, 21)
-        Me.PeliculaToolStripMenuItem.Text = "Pelicula"
+        Me.PeliculaToolStripMenuItem.Size = New System.Drawing.Size(86, 21)
+        Me.PeliculaToolStripMenuItem.Text = "Contenido"
         '
         'AgregarPeliculaToolStripMenuItem
         '
         Me.AgregarPeliculaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.AgregarPeliculaToolStripMenuItem.Name = "AgregarPeliculaToolStripMenuItem"
-        Me.AgregarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.AgregarPeliculaToolStripMenuItem.Text = "Agregar pelicula"
+        Me.AgregarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
+        Me.AgregarPeliculaToolStripMenuItem.Text = "Agregar contenido"
         '
         'EliminarPeliculaToolStripMenuItem
         '
         Me.EliminarPeliculaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.EliminarPeliculaToolStripMenuItem.Name = "EliminarPeliculaToolStripMenuItem"
-        Me.EliminarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.EliminarPeliculaToolStripMenuItem.Text = "Eliminar Pelicula"
+        Me.EliminarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
+        Me.EliminarPeliculaToolStripMenuItem.Text = "Eliminar contenido"
         '
         'ModificarPeliculaToolStripMenuItem
         '
         Me.ModificarPeliculaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.ModificarPeliculaToolStripMenuItem.Name = "ModificarPeliculaToolStripMenuItem"
-        Me.ModificarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.ModificarPeliculaToolStripMenuItem.Text = "Modificar Pelicula"
-        '
-        'SeriesToolStripMenuItem
-        '
-        Me.SeriesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.SeriesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.SeriesToolStripMenuItem.Name = "SeriesToolStripMenuItem"
-        Me.SeriesToolStripMenuItem.Size = New System.Drawing.Size(61, 21)
-        Me.SeriesToolStripMenuItem.Text = "Series"
-        '
-        'AgregarToolStripMenuItem
-        '
-        Me.AgregarToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
-        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.AgregarToolStripMenuItem.Text = "Agregar"
-        '
-        'ModificarToolStripMenuItem
-        '
-        Me.ModificarToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.ModificarToolStripMenuItem.Text = "Modificar"
-        '
-        'EliminarToolStripMenuItem
-        '
-        Me.EliminarToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        Me.ModificarPeliculaToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
+        Me.ModificarPeliculaToolStripMenuItem.Text = "LIstar contenido"
         '
         'UsuariosToolStripMenuItem
         '
-        Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarUsuarioToolStripMenuItem, Me.BorrarUsuarioToolStripMenuItem, Me.ModificarUsuarioToolStripMenuItem})
+        Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarUsuarioToolStripMenuItem, Me.BorrarUsuarioToolStripMenuItem, Me.ToolStripMenuItem2, Me.ModificarUsuarioToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(77, 21)
@@ -153,7 +125,7 @@ Partial Class Form1
         Me.ModificarUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.ModificarUsuarioToolStripMenuItem.Name = "ModificarUsuarioToolStripMenuItem"
         Me.ModificarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
-        Me.ModificarUsuarioToolStripMenuItem.Text = "Modificar Usuario"
+        Me.ModificarUsuarioToolStripMenuItem.Text = "Listar usuario"
         '
         'Useresq
         '
@@ -168,6 +140,42 @@ Partial Class Form1
         Me.Useresq.TabIndex = 3
         Me.Useresq.Text = "-"
         Me.Useresq.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(206, 22)
+        Me.ToolStripMenuItem1.Text = "Modificar contenido"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem2.Text = "Modificar Usuario"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripMenuItem5})
+        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(102, 21)
+        Me.ToolStripMenuItem3.Text = "Comentarios"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(215, 22)
+        Me.ToolStripMenuItem4.Text = "Eliminar comentarios"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(215, 22)
+        Me.ToolStripMenuItem5.Text = "Borrar comentarios"
         '
         'Form1
         '
@@ -209,10 +217,11 @@ Partial Class Form1
     Friend WithEvents ModificarUsuarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BorrarUsuarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Useresq As Label
-    Friend WithEvents SeriesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AgregarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ModificarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ModificarPeliculaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AgregarUsuarioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
 End Class

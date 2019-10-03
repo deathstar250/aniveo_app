@@ -26,18 +26,6 @@
         ModificarPelicula.ShowDialog()
     End Sub
 
-    Private Sub AgregarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarToolStripMenuItem.Click
-        AgregarSerie.ShowDialog()
-    End Sub
-
-    Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
-        ModificarSerie.ShowDialog()
-    End Sub
-
-    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
-        BorrarSerie.ShowDialog()
-    End Sub
-
     Private Sub AgregarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgregarUsuarioToolStripMenuItem.Click
         Adduser.open()
     End Sub

@@ -202,7 +202,7 @@ Partial Class ModificarPelicula
         Me.lblLinkPElicula.AutoSize = True
         Me.lblLinkPElicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblLinkPElicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblLinkPElicula.Location = New System.Drawing.Point(8, 346)
+        Me.lblLinkPElicula.Location = New System.Drawing.Point(44, 346)
         Me.lblLinkPElicula.Name = "lblLinkPElicula"
         Me.lblLinkPElicula.Size = New System.Drawing.Size(359, 39)
         Me.lblLinkPElicula.TabIndex = 36

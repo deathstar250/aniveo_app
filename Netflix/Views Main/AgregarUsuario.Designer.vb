@@ -37,6 +37,8 @@ Partial Class Adduser
         Me.lblNombreUsuario = New System.Windows.Forms.Label()
         Me.lblErrorAgrgarUsuario = New System.Windows.Forms.Label()
         Me.txtContraseniaNuevaUsuario = New System.Windows.Forms.MaskedTextBox()
+        Me.lblError = New System.Windows.Forms.Label()
+        Me.lblError1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -181,12 +183,30 @@ Partial Class Adduser
         Me.txtContraseniaNuevaUsuario.TabIndex = 78
         Me.txtContraseniaNuevaUsuario.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Location = New System.Drawing.Point(88, 45)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 19)
+        Me.lblError.TabIndex = 79
+        '
+        'lblError1
+        '
+        Me.lblError1.AutoSize = True
+        Me.lblError1.Location = New System.Drawing.Point(227, 50)
+        Me.lblError1.Name = "lblError1"
+        Me.lblError1.Size = New System.Drawing.Size(0, 19)
+        Me.lblError1.TabIndex = 80
+        '
         'Adduser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.lblError1)
+        Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.txtContraseniaNuevaUsuario)
         Me.Controls.Add(Me.lblErrorAgrgarUsuario)
         Me.Controls.Add(Me.TxtNombreUsuario)
@@ -229,4 +249,6 @@ Partial Class Adduser
     Friend WithEvents lblNombreUsuario As Label
     Friend WithEvents lblErrorAgrgarUsuario As Label
     Friend WithEvents txtContraseniaNuevaUsuario As MaskedTextBox
+    Friend WithEvents lblError As Label
+    Friend WithEvents lblError1 As Label
 End Class

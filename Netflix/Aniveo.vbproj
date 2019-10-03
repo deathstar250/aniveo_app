@@ -151,12 +151,6 @@
     <Compile Include="Views Main\AgregarPelicula.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views Main\AgregarSerie.Designer.vb">
-      <DependentUpon>AgregarSerie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views Main\AgregarSerie.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Views Main\AgregarUsuario.Designer.vb">
       <DependentUpon>AgregarUsuario.vb</DependentUpon>
     </Compile>
@@ -169,12 +163,6 @@
     <Compile Include="Views Main\BorrarPelicula.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views Main\BorrarSerie.Designer.vb">
-      <DependentUpon>BorrarSerie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views Main\BorrarSerie.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Views Main\BorrarUsuario.Designer.vb">
       <DependentUpon>BorrarUsuario.vb</DependentUpon>
     </Compile>
@@ -185,12 +173,6 @@
       <DependentUpon>ModificarPelicula.vb</DependentUpon>
     </Compile>
     <Compile Include="Views Main\ModificarPelicula.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views Main\ModificarSerie.Designer.vb">
-      <DependentUpon>ModificarSerie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Views Main\ModificarSerie.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views Main\ModificarUsuario.Designer.vb">
@@ -216,26 +198,17 @@
     <EmbeddedResource Include="Views Main\AgregarPelicula.resx">
       <DependentUpon>AgregarPelicula.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views Main\AgregarSerie.resx">
-      <DependentUpon>AgregarSerie.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views Main\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views Main\BorrarPelicula.resx">
       <DependentUpon>BorrarPelicula.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views Main\BorrarSerie.resx">
-      <DependentUpon>BorrarSerie.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views Main\BorrarUsuario.resx">
       <DependentUpon>BorrarUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views Main\ModificarPelicula.resx">
       <DependentUpon>ModificarPelicula.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views Main\ModificarSerie.resx">
-      <DependentUpon>ModificarSerie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views Main\ModificarUsuario.resx">
       <DependentUpon>ModificarUsuario.vb</DependentUpon>
