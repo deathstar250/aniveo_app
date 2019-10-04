@@ -690,3 +690,8 @@ C:\aniveo_app\Netflix\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\aniveo_app\Netflix\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\aniveo_app\Netflix\bin\Debug\System.ValueTuple.xml
 C:\aniveo_app\Netflix\obj\Debug\Aniveo.vbproj.CopyComplete
+C:\aniveo_app\Netflix\obj\Debug\Aniveo.vbprojAssemblyReference.cache
+C:\aniveo_app\Netflix\obj\Debug\Aniveo.BorrarComentarios.resources
+C:\aniveo_app\Netflix\obj\Debug\Aniveo.ListarComentarios.resources
+C:\aniveo_app\Netflix\obj\Debug\Aniveo.ListarContenido.resources
+C:\aniveo_app\Netflix\obj\Debug\Aniveo.ListarUsuario.resources

@@ -87,5 +87,15 @@
 
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Application.Exit()
+    End Sub
+    Private Sub Button2_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
+        Button1.ForeColor = System.Drawing.Color.DimGray
 
+    End Sub
+    Private Sub Button2_MouseLeave(sender As Object, e As EventArgs) Handles Button1.MouseLeave
+        Button1.ForeColor = Color.FromArgb(214, 175, 26)
+
+    End Sub
 End Class

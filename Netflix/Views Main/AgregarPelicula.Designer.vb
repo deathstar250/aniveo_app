@@ -116,8 +116,7 @@ Partial Class AgregarPelicula
         Me.txtNombrePelicula.Name = "txtNombrePelicula"
         Me.txtNombrePelicula.Size = New System.Drawing.Size(261, 23)
         Me.txtNombrePelicula.TabIndex = 14
-        '
-        'txtGenero
+        '        'txtGenero
         '
         Me.txtGenero.BackColor = System.Drawing.SystemColors.MenuText
         Me.txtGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle

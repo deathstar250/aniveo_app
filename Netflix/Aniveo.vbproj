@@ -157,6 +157,12 @@
     <Compile Include="Views Main\AgregarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Views Main\BorrarComentarios.Designer.vb">
+      <DependentUpon>BorrarComentarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views Main\BorrarComentarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views Main\BorrarPelicula.Designer.vb">
       <DependentUpon>BorrarPelicula.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,24 @@
       <DependentUpon>BorrarUsuario.vb</DependentUpon>
     </Compile>
     <Compile Include="Views Main\BorrarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views Main\ListarComentarios.Designer.vb">
+      <DependentUpon>ListarComentarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views Main\ListarComentarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views Main\ListarContenido.Designer.vb">
+      <DependentUpon>ListarContenido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views Main\ListarContenido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views Main\ListarUsuario.Designer.vb">
+      <DependentUpon>ListarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views Main\ListarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views Main\ModificarPelicula.Designer.vb">
@@ -201,11 +225,23 @@
     <EmbeddedResource Include="Views Main\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views Main\BorrarComentarios.resx">
+      <DependentUpon>BorrarComentarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views Main\BorrarPelicula.resx">
       <DependentUpon>BorrarPelicula.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views Main\BorrarUsuario.resx">
       <DependentUpon>BorrarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views Main\ListarComentarios.resx">
+      <DependentUpon>ListarComentarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views Main\ListarContenido.resx">
+      <DependentUpon>ListarContenido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views Main\ListarUsuario.resx">
+      <DependentUpon>ListarUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views Main\ModificarPelicula.resx">
       <DependentUpon>ModificarPelicula.vb</DependentUpon>
