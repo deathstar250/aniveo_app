@@ -26,9 +26,13 @@ Partial Class ListarUsuario
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.lblInfo2 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.IDColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContentColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lvUsuarios = New System.Windows.Forms.ListView()
+        Me.NombreUsuario = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Apellido = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Contraseña = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Correo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Fecha = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -75,26 +79,46 @@ Partial Class ListarUsuario
         Me.lblInfo2.Size = New System.Drawing.Size(0, 19)
         Me.lblInfo2.TabIndex = 14
         '
-        'ListView1
+        'lvUsuarios
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IDColumnHeader1, Me.ContentColumnHeader1})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(166, 103)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(401, 379)
-        Me.ListView1.TabIndex = 15
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvUsuarios.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.NombreUsuario, Me.nombre, Me.Apellido, Me.Contraseña, Me.Correo, Me.Fecha})
+        Me.lvUsuarios.HideSelection = False
+        Me.lvUsuarios.Location = New System.Drawing.Point(27, 97)
+        Me.lvUsuarios.Name = "lvUsuarios"
+        Me.lvUsuarios.Size = New System.Drawing.Size(710, 379)
+        Me.lvUsuarios.TabIndex = 15
+        Me.lvUsuarios.UseCompatibleStateImageBehavior = False
+        Me.lvUsuarios.View = System.Windows.Forms.View.Details
         '
-        'IDColumnHeader1
+        'NombreUsuario
         '
-        Me.IDColumnHeader1.Text = "ID"
-        Me.IDColumnHeader1.Width = 32
+        Me.NombreUsuario.Text = "Nombre usuario"
+        Me.NombreUsuario.Width = 140
         '
-        'ContentColumnHeader1
+        'nombre
         '
-        Me.ContentColumnHeader1.Text = "Usuario"
-        Me.ContentColumnHeader1.Width = 341
+        Me.nombre.Text = "Nombre"
+        Me.nombre.Width = 92
+        '
+        'Apellido
+        '
+        Me.Apellido.Text = "Apellido"
+        Me.Apellido.Width = 97
+        '
+        'Contraseña
+        '
+        Me.Contraseña.Text = "Contraseña"
+        Me.Contraseña.Width = 102
+        '
+        'Correo
+        '
+        Me.Correo.Text = "Correo"
+        Me.Correo.Width = 146
+        '
+        'Fecha
+        '
+        Me.Fecha.Text = "Fecha Nacimiento"
+        Me.Fecha.Width = 153
         '
         'ListarUsuario
         '
@@ -102,7 +126,7 @@ Partial Class ListarUsuario
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvUsuarios)
         Me.Controls.Add(Me.lblInfo2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblInfo)
@@ -123,7 +147,11 @@ Partial Class ListarUsuario
     Friend WithEvents Button1 As Button
     Friend WithEvents lblInfo As Label
     Friend WithEvents lblInfo2 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents IDColumnHeader1 As ColumnHeader
-    Friend WithEvents ContentColumnHeader1 As ColumnHeader
+    Friend WithEvents lvUsuarios As ListView
+    Friend WithEvents NombreUsuario As ColumnHeader
+    Friend WithEvents nombre As ColumnHeader
+    Friend WithEvents Apellido As ColumnHeader
+    Friend WithEvents Contraseña As ColumnHeader
+    Friend WithEvents Correo As ColumnHeader
+    Friend WithEvents Fecha As ColumnHeader
 End Class

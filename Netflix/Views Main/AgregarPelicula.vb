@@ -36,8 +36,8 @@ Public Class AgregarPelicula
                     Dim cmd = New Npgsql.NpgsqlCommand()
                     cmd.Connection = connection
 
-                    Dim commandString = "insert into contenido VALUES (@_id,@_titulo, @_genero, @_duracion_minutos, @_duracion_segundos, @_link, @_sinopsis, @_calificacion_id, @_reparto, @_fecha_estreno);"
-
+                    Dim commandString = "insert into contenido VALUES (@_id,@_titulo, @_genero,@_duracion_minutos,@_duracion_segundos,@_link,@_sinopsis,@_calificacion_id,@_reparto,@_fecha_estreno);"
+                    cmd.CommandText = commandString
                     cmd.Parameters.Add("@_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = _id
                     cmd.Parameters.Add("@_titulo", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = _titulo
                     cmd.Parameters.Add("@_genero", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = _genero
@@ -79,7 +79,7 @@ Public Class AgregarPelicula
 
 
         Catch ex As Exception
-
+            lblError.Text = ex.Message
         End Try
     End Sub
 

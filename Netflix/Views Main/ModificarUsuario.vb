@@ -22,6 +22,10 @@
         Dim fecha As String
 
 
+        Dim _Usuario As nuevoUsuario
+
+
+
         Try
 
             nombreUsuario = txtNombreUsr.Text
@@ -30,6 +34,7 @@
             password = txtContraseniaNuevaUsuario.Text
             correo = txtCorreoNuevoUsuario.Text
             fecha = txtFechaNacimientoUsuario.Text
+            _Usuario = New nuevoUsuario(nombreUsuario, nombre, apellido, password, correo, fecha)
 
         Catch ex As Exception
             lblError.Text = ex.Message
@@ -72,8 +77,6 @@
         End Try
 
         Try
-
-            Dim _Usuario As New nuevoUsuario(nombreUsuario, nombre, apellido, password, correo, fecha)
             Dim connectionClass = New Connection_PgSQL
             Dim connection = New Npgsql.NpgsqlConnection()
             connection = connectionClass.OpenConnection()
@@ -98,9 +101,9 @@
             resultado = cmd.ExecuteNonQuery()
 
             If (resultado >= 0) Then
-                lblError.Text = "Enhorabuena, usuario creado correctamente"
+                lblError.Text = "Cambios Efectuados"
             Else
-                lblError.Text = "Le has errado al bizcochardo"
+                lblError.Text = "Error consulte soporte"
             End If
 
             connection.Close()
