@@ -23,9 +23,10 @@ Partial Class BorrarPelicula
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtIdUsuario = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtUsuarioAEliminar = New System.Windows.Forms.TextBox()
+        Me.lblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -38,24 +39,16 @@ Partial Class BorrarPelicula
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "◄"
         '
-        'Label3
+        'txtIdUsuario
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("League Spartan", 25.0!)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(87, 160)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(554, 43)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Seleccionar pelicula a eliminar"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(96, 224)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(528, 26)
-        Me.ComboBox1.TabIndex = 8
+        Me.txtIdUsuario.AutoSize = True
+        Me.txtIdUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.txtIdUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.txtIdUsuario.Location = New System.Drawing.Point(137, 148)
+        Me.txtIdUsuario.Name = "txtIdUsuario"
+        Me.txtIdUsuario.Size = New System.Drawing.Size(479, 39)
+        Me.txtIdUsuario.TabIndex = 7
+        Me.txtIdUsuario.Text = "Seleccionar pelicula a eliminar"
         '
         'Button1
         '
@@ -63,7 +56,7 @@ Partial Class BorrarPelicula
         Me.Button1.FlatAppearance.BorderSize = 3
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("League Spartan", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(260, 320)
         Me.Button1.Name = "Button1"
@@ -72,21 +65,37 @@ Partial Class BorrarPelicula
         Me.Button1.Text = "Eliminar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'delmovie
+        'txtUsuarioAEliminar
+        '
+        Me.txtUsuarioAEliminar.Location = New System.Drawing.Point(260, 240)
+        Me.txtUsuarioAEliminar.Name = "txtUsuarioAEliminar"
+        Me.txtUsuarioAEliminar.Size = New System.Drawing.Size(206, 26)
+        Me.txtUsuarioAEliminar.TabIndex = 14
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Location = New System.Drawing.Point(82, 41)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 19)
+        Me.lblError.TabIndex = 15
+        '
+        'BorrarPelicula
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.txtUsuarioAEliminar)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtIdUsuario)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "delmovie"
+        Me.Name = "BorrarPelicula"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "delmovie"
         Me.ResumeLayout(False)
@@ -95,7 +104,8 @@ Partial Class BorrarPelicula
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtIdUsuario As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents txtUsuarioAEliminar As TextBox
+    Friend WithEvents lblError As Label
 End Class

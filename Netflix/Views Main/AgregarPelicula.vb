@@ -6,6 +6,56 @@ Public Class AgregarPelicula
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        crearContenido()
+        If cbxPelicula.Checked Then
+            crearPelicula()
+        ElseIf cbxSerie.Checked Then
+            AgregarSerie.Show()
+        Else
+
+        End If
+
+    End Sub
+
+    Public Function crearPelicula()
+
+        Try
+            Dim titulo As String = txtNombrePelicula.Text
+            Dim id_contenido As Integer = traerID()
+
+            Dim connectionClass = New Connection_PgSQL
+            Dim connection = New Npgsql.NpgsqlConnection()
+            connection = connectionClass.OpenConnection()
+
+            Dim cmd = New Npgsql.NpgsqlCommand()
+            cmd.Connection = connection
+
+            Dim commandString = "insert into pelicula VALUES (@_id,@_titulo);"
+            cmd.CommandText = commandString
+            cmd.Parameters.Add("@_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = id_contenido
+            cmd.Parameters.Add("@_titulo", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = titulo
+
+            Dim resultado As Integer
+
+            resultado = cmd.ExecuteNonQuery()
+
+            If (resultado >= 0) Then
+                lblError.Text = "Enhorabuena, usuario creado correctamente"
+            Else
+                lblError.Text = "Error al crear pelicula"
+            End If
+
+            connection.Close()
+            cmd.Parameters.Clear()
+
+
+        Catch ex As Exception
+            lblError.Text = ex.Message
+        End Try
+
+    End Function
+
+    Public Function crearContenido()
         Try
 
             Dim _id As Integer = traerID() + 1
@@ -24,9 +74,7 @@ Public Class AgregarPelicula
             Catch ex As Exception
                 lblError.Text = ex.Message
             End Try
-
-            If cbxPelicula.Checked Then
-                Try
+            Try
                     Dim _contenido = New agregarContenido(_id, _titulo, _genero, _duracion_minutos, _duracion_segundos, _link, _sinopsis, _calificacion_id, _reparto, _fecha_estreno)
 
                     Dim connectionClass = New Connection_PgSQL
@@ -64,24 +112,10 @@ Public Class AgregarPelicula
                     lblError.Text = ex.Message
                 End Try
 
-
-
-            ElseIf cbxSerie.Checked Then
-
-                lblError.Text = "no te pregunte"
-
-            Else
-
-            End If
-
-
-
-
-
         Catch ex As Exception
             lblError.Text = ex.Message
         End Try
-    End Sub
+    End Function
 
     Public Function traerID()
 
@@ -157,6 +191,10 @@ Public Class AgregarPelicula
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub cbxPelicula_CheckedChanged(sender As Object, e As EventArgs) Handles cbxPelicula.CheckedChanged
 
     End Sub
 End Class
