@@ -829,3 +829,4 @@ C:\Users\macie\Desktop\ANIVEO Project\aniveo_app\Netflix\obj\Debug\Aniveo.vbproj
 C:\Users\macie\Desktop\ANIVEO Project\aniveo_app\Netflix\obj\Debug\Aniveo.exe
 C:\Users\macie\Desktop\ANIVEO Project\aniveo_app\Netflix\obj\Debug\Netflix.xml
 C:\Users\macie\Desktop\ANIVEO Project\aniveo_app\Netflix\obj\Debug\Aniveo.pdb
+C:\Users\macie\Desktop\ANIVEO Project\aniveo_app\Netflix\obj\Debug\Aniveo.vbprojAssemblyReference.cache

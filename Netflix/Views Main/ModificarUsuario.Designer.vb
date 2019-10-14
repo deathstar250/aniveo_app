@@ -34,8 +34,9 @@ Partial Class ModificarUsuario
         Me.txtContraseniaNuevaUsuario = New System.Windows.Forms.TextBox()
         Me.lblContraseniaNuevaUsuario = New System.Windows.Forms.Label()
         Me.txtCorreoNuevoUsuario = New System.Windows.Forms.TextBox()
-        Me.cbxModificarUsuario = New System.Windows.Forms.ComboBox()
         Me.lblModificarUsuario = New System.Windows.Forms.Label()
+        Me.txtNombreUsr = New System.Windows.Forms.TextBox()
+        Me.lblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -153,14 +154,6 @@ Partial Class ModificarUsuario
         Me.txtCorreoNuevoUsuario.Size = New System.Drawing.Size(321, 26)
         Me.txtCorreoNuevoUsuario.TabIndex = 54
         '
-        'cbxModificarUsuario
-        '
-        Me.cbxModificarUsuario.FormattingEnabled = True
-        Me.cbxModificarUsuario.Location = New System.Drawing.Point(238, 112)
-        Me.cbxModificarUsuario.Name = "cbxModificarUsuario"
-        Me.cbxModificarUsuario.Size = New System.Drawing.Size(368, 26)
-        Me.cbxModificarUsuario.TabIndex = 53
-        '
         'lblModificarUsuario
         '
         Me.lblModificarUsuario.AutoSize = True
@@ -172,12 +165,29 @@ Partial Class ModificarUsuario
         Me.lblModificarUsuario.TabIndex = 52
         Me.lblModificarUsuario.Text = "Usuario a modificar"
         '
+        'txtNombreUsr
+        '
+        Me.txtNombreUsr.Location = New System.Drawing.Point(232, 123)
+        Me.txtNombreUsr.Name = "txtNombreUsr"
+        Me.txtNombreUsr.Size = New System.Drawing.Size(320, 26)
+        Me.txtNombreUsr.TabIndex = 65
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Location = New System.Drawing.Point(501, 208)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 19)
+        Me.lblError.TabIndex = 66
+        '
         'ModificarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(843, 705)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.txtNombreUsr)
         Me.Controls.Add(Me.txtFechaNacimientoUsuario)
         Me.Controls.Add(Me.lblFechaNacimientoUsuario)
         Me.Controls.Add(Me.txtApellidoNuevoUsuario)
@@ -189,7 +199,6 @@ Partial Class ModificarUsuario
         Me.Controls.Add(Me.txtContraseniaNuevaUsuario)
         Me.Controls.Add(Me.lblContraseniaNuevaUsuario)
         Me.Controls.Add(Me.txtCorreoNuevoUsuario)
-        Me.Controls.Add(Me.cbxModificarUsuario)
         Me.Controls.Add(Me.lblModificarUsuario)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
@@ -216,6 +225,7 @@ Partial Class ModificarUsuario
     Friend WithEvents txtContraseniaNuevaUsuario As TextBox
     Friend WithEvents lblContraseniaNuevaUsuario As Label
     Friend WithEvents txtCorreoNuevoUsuario As TextBox
-    Friend WithEvents cbxModificarUsuario As ComboBox
     Friend WithEvents lblModificarUsuario As Label
+    Friend WithEvents txtNombreUsr As TextBox
+    Friend WithEvents lblError As Label
 End Class
