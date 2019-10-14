@@ -45,8 +45,8 @@ Partial Class AgregarPelicula
         Me.Label11 = New System.Windows.Forms.Label()
         Me.calendar = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.cbxSerie = New System.Windows.Forms.CheckBox()
+        Me.cbxPelicula = New System.Windows.Forms.CheckBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -83,9 +83,9 @@ Partial Class AgregarPelicula
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(37, 94)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(268, 39)
+        Me.Label4.Size = New System.Drawing.Size(295, 39)
         Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Nombre Pelicula"
+        Me.Label4.Text = "Nombre contenido"
         '
         'Label5
         '
@@ -116,7 +116,8 @@ Partial Class AgregarPelicula
         Me.txtNombrePelicula.Name = "txtNombrePelicula"
         Me.txtNombrePelicula.Size = New System.Drawing.Size(261, 23)
         Me.txtNombrePelicula.TabIndex = 14
-        '        'txtGenero
+        '
+        'txtGenero
         '
         Me.txtGenero.BackColor = System.Drawing.SystemColors.MenuText
         Me.txtGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -279,8 +280,8 @@ Partial Class AgregarPelicula
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.cbxSerie)
+        Me.GroupBox1.Controls.Add(Me.cbxPelicula)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(44, 438)
         Me.GroupBox1.Name = "GroupBox1"
@@ -289,25 +290,25 @@ Partial Class AgregarPelicula
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tipo de contenido"
         '
-        'CheckBox2
+        'cbxSerie
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(0, 71)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(67, 23)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Serie"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.cbxSerie.AutoSize = True
+        Me.cbxSerie.Location = New System.Drawing.Point(0, 71)
+        Me.cbxSerie.Name = "cbxSerie"
+        Me.cbxSerie.Size = New System.Drawing.Size(67, 23)
+        Me.cbxSerie.TabIndex = 1
+        Me.cbxSerie.Text = "Serie"
+        Me.cbxSerie.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'cbxPelicula
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(0, 38)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(89, 23)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Pelicula"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.cbxPelicula.AutoSize = True
+        Me.cbxPelicula.Location = New System.Drawing.Point(0, 38)
+        Me.cbxPelicula.Name = "cbxPelicula"
+        Me.cbxPelicula.Size = New System.Drawing.Size(89, 23)
+        Me.cbxPelicula.TabIndex = 0
+        Me.cbxPelicula.Text = "Pelicula"
+        Me.cbxPelicula.UseVisualStyleBackColor = True
         '
         'lblError
         '
@@ -383,7 +384,7 @@ Partial Class AgregarPelicula
     Friend WithEvents Label11 As Label
     Friend WithEvents calendar As MonthCalendar
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents cbxSerie As CheckBox
+    Friend WithEvents cbxPelicula As CheckBox
     Friend WithEvents lblError As Label
 End Class

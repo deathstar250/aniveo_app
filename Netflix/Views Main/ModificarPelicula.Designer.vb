@@ -231,9 +231,9 @@ Partial Class ModificarPelicula
         Me.lblModificarPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.lblModificarPelicula.Location = New System.Drawing.Point(251, 42)
         Me.lblModificarPelicula.Name = "lblModificarPelicula"
-        Me.lblModificarPelicula.Size = New System.Drawing.Size(313, 39)
+        Me.lblModificarPelicula.Size = New System.Drawing.Size(348, 39)
         Me.lblModificarPelicula.TabIndex = 33
-        Me.lblModificarPelicula.Text = "Pelicula a modificar"
+        Me.lblModificarPelicula.Text = "Contenido a modificar"
         '
         'ModificarPelicula
         '

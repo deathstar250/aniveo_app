@@ -78,6 +78,7 @@ Partial Class ListarUsuario
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IDColumnHeader1, Me.ContentColumnHeader1})
+        Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(166, 103)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(401, 379)
@@ -92,7 +93,7 @@ Partial Class ListarUsuario
         '
         'ContentColumnHeader1
         '
-        Me.ContentColumnHeader1.Text = "Contenido"
+        Me.ContentColumnHeader1.Text = "Usuario"
         Me.ContentColumnHeader1.Width = 341
         '
         'ListarUsuario

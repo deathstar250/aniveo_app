@@ -30,6 +30,18 @@
 
     End Sub
 
+
+
+
+    Public Property id As Integer
+        Get
+            Return _id
+        End Get
+        Set(value As Integer)
+            _id = value
+        End Set
+    End Property
+
     Public Property fecha_estreno As Date
         Get
             Return _fecha_estreno
@@ -42,10 +54,10 @@
 
     Public Property reparto As String
         Get
-            Return _sinopsis
+            Return _reparto
         End Get
         Set(value As String)
-            _sinopsis = value
+            _reparto = value
         End Set
     End Property
 
@@ -107,11 +119,11 @@
     End Property
 
 
-    Public Property titulo As Integer
+    Public Property titulo As String
         Get
             Return _titulo
         End Get
-        Set(value As Integer)
+        Set(value As String)
             _titulo = value
         End Set
     End Property
