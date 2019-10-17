@@ -28,10 +28,7 @@ Partial Class ModificarPelicula
         Me.txtCalificacionPelicula = New System.Windows.Forms.TextBox()
         Me.lblCalificacionPelicula = New System.Windows.Forms.Label()
         Me.lblGeneroPelicula = New System.Windows.Forms.Label()
-        Me.cbxGeneroPelicula = New System.Windows.Forms.ComboBox()
-        Me.txtFechaEstrenoPelicula = New System.Windows.Forms.TextBox()
-        Me.lblFechaEstrenoPelicula = New System.Windows.Forms.Label()
-        Me.txtDuracionPelicula = New System.Windows.Forms.TextBox()
+        Me.txtDuracionPeliculaMinutos = New System.Windows.Forms.TextBox()
         Me.lblDuracionPelicula = New System.Windows.Forms.Label()
         Me.txtTituloNuevoPelicula = New System.Windows.Forms.TextBox()
         Me.lblTituloNuevoPelicula = New System.Windows.Forms.Label()
@@ -40,8 +37,11 @@ Partial Class ModificarPelicula
         Me.txtLinkPelicula = New System.Windows.Forms.TextBox()
         Me.lblLinkPElicula = New System.Windows.Forms.Label()
         Me.txtDescripcionPelicula = New System.Windows.Forms.TextBox()
-        Me.cbxModificarPelicula = New System.Windows.Forms.ComboBox()
         Me.lblModificarPelicula = New System.Windows.Forms.Label()
+        Me.txtDuracionPeliculaSegundos = New System.Windows.Forms.TextBox()
+        Me.txtGenero = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.lblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -56,7 +56,7 @@ Partial Class ModificarPelicula
         '
         'txtRepartoPelicula
         '
-        Me.txtRepartoPelicula.Location = New System.Drawing.Point(466, 490)
+        Me.txtRepartoPelicula.Location = New System.Drawing.Point(478, 448)
         Me.txtRepartoPelicula.Multiline = True
         Me.txtRepartoPelicula.Name = "txtRepartoPelicula"
         Me.txtRepartoPelicula.Size = New System.Drawing.Size(368, 96)
@@ -67,7 +67,7 @@ Partial Class ModificarPelicula
         Me.lblRepartoPelicula.AutoSize = True
         Me.lblRepartoPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblRepartoPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblRepartoPelicula.Location = New System.Drawing.Point(571, 442)
+        Me.lblRepartoPelicula.Location = New System.Drawing.Point(583, 400)
         Me.lblRepartoPelicula.Name = "lblRepartoPelicula"
         Me.lblRepartoPelicula.Size = New System.Drawing.Size(138, 39)
         Me.lblRepartoPelicula.TabIndex = 50
@@ -75,7 +75,7 @@ Partial Class ModificarPelicula
         '
         'txtCalificacionPelicula
         '
-        Me.txtCalificacionPelicula.Location = New System.Drawing.Point(491, 394)
+        Me.txtCalificacionPelicula.Location = New System.Drawing.Point(503, 352)
         Me.txtCalificacionPelicula.Name = "txtCalificacionPelicula"
         Me.txtCalificacionPelicula.Size = New System.Drawing.Size(320, 26)
         Me.txtCalificacionPelicula.TabIndex = 49
@@ -85,7 +85,7 @@ Partial Class ModificarPelicula
         Me.lblCalificacionPelicula.AutoSize = True
         Me.lblCalificacionPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblCalificacionPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblCalificacionPelicula.Location = New System.Drawing.Point(539, 346)
+        Me.lblCalificacionPelicula.Location = New System.Drawing.Point(551, 304)
         Me.lblCalificacionPelicula.Name = "lblCalificacionPelicula"
         Me.lblCalificacionPelicula.Size = New System.Drawing.Size(193, 39)
         Me.lblCalificacionPelicula.TabIndex = 48
@@ -96,51 +96,26 @@ Partial Class ModificarPelicula
         Me.lblGeneroPelicula.AutoSize = True
         Me.lblGeneroPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblGeneroPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblGeneroPelicula.Location = New System.Drawing.Point(573, 250)
+        Me.lblGeneroPelicula.Location = New System.Drawing.Point(585, 208)
         Me.lblGeneroPelicula.Name = "lblGeneroPelicula"
         Me.lblGeneroPelicula.Size = New System.Drawing.Size(130, 39)
         Me.lblGeneroPelicula.TabIndex = 47
         Me.lblGeneroPelicula.Text = "Genero"
         '
-        'cbxGeneroPelicula
+        'txtDuracionPeliculaMinutos
         '
-        Me.cbxGeneroPelicula.FormattingEnabled = True
-        Me.cbxGeneroPelicula.Location = New System.Drawing.Point(490, 298)
-        Me.cbxGeneroPelicula.Name = "cbxGeneroPelicula"
-        Me.cbxGeneroPelicula.Size = New System.Drawing.Size(320, 26)
-        Me.cbxGeneroPelicula.TabIndex = 46
-        '
-        'txtFechaEstrenoPelicula
-        '
-        Me.txtFechaEstrenoPelicula.Location = New System.Drawing.Point(490, 202)
-        Me.txtFechaEstrenoPelicula.Name = "txtFechaEstrenoPelicula"
-        Me.txtFechaEstrenoPelicula.Size = New System.Drawing.Size(320, 26)
-        Me.txtFechaEstrenoPelicula.TabIndex = 45
-        '
-        'lblFechaEstrenoPelicula
-        '
-        Me.lblFechaEstrenoPelicula.AutoSize = True
-        Me.lblFechaEstrenoPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.lblFechaEstrenoPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblFechaEstrenoPelicula.Location = New System.Drawing.Point(519, 154)
-        Me.lblFechaEstrenoPelicula.Name = "lblFechaEstrenoPelicula"
-        Me.lblFechaEstrenoPelicula.Size = New System.Drawing.Size(234, 39)
-        Me.lblFechaEstrenoPelicula.TabIndex = 44
-        Me.lblFechaEstrenoPelicula.Text = "Fecha estreno"
-        '
-        'txtDuracionPelicula
-        '
-        Me.txtDuracionPelicula.Location = New System.Drawing.Point(59, 298)
-        Me.txtDuracionPelicula.Name = "txtDuracionPelicula"
-        Me.txtDuracionPelicula.Size = New System.Drawing.Size(320, 26)
-        Me.txtDuracionPelicula.TabIndex = 43
+        Me.txtDuracionPeliculaMinutos.Location = New System.Drawing.Point(66, 256)
+        Me.txtDuracionPeliculaMinutos.Name = "txtDuracionPeliculaMinutos"
+        Me.txtDuracionPeliculaMinutos.Size = New System.Drawing.Size(156, 26)
+        Me.txtDuracionPeliculaMinutos.TabIndex = 43
+        Me.txtDuracionPeliculaMinutos.Text = "Minutos"
         '
         'lblDuracionPelicula
         '
         Me.lblDuracionPelicula.AutoSize = True
         Me.lblDuracionPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblDuracionPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblDuracionPelicula.Location = New System.Drawing.Point(123, 250)
+        Me.lblDuracionPelicula.Location = New System.Drawing.Point(135, 208)
         Me.lblDuracionPelicula.Name = "lblDuracionPelicula"
         Me.lblDuracionPelicula.Size = New System.Drawing.Size(154, 39)
         Me.lblDuracionPelicula.TabIndex = 42
@@ -148,7 +123,7 @@ Partial Class ModificarPelicula
         '
         'txtTituloNuevoPelicula
         '
-        Me.txtTituloNuevoPelicula.Location = New System.Drawing.Point(59, 202)
+        Me.txtTituloNuevoPelicula.Location = New System.Drawing.Point(502, 155)
         Me.txtTituloNuevoPelicula.Name = "txtTituloNuevoPelicula"
         Me.txtTituloNuevoPelicula.Size = New System.Drawing.Size(320, 26)
         Me.txtTituloNuevoPelicula.TabIndex = 41
@@ -158,7 +133,7 @@ Partial Class ModificarPelicula
         Me.lblTituloNuevoPelicula.AutoSize = True
         Me.lblTituloNuevoPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblTituloNuevoPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblTituloNuevoPelicula.Location = New System.Drawing.Point(103, 154)
+        Me.lblTituloNuevoPelicula.Location = New System.Drawing.Point(541, 113)
         Me.lblTituloNuevoPelicula.Name = "lblTituloNuevoPelicula"
         Me.lblTituloNuevoPelicula.Size = New System.Drawing.Size(203, 39)
         Me.lblTituloNuevoPelicula.TabIndex = 40
@@ -184,7 +159,7 @@ Partial Class ModificarPelicula
         Me.lblDescripcionPelicula.AutoSize = True
         Me.lblDescripcionPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblDescripcionPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblDescripcionPelicula.Location = New System.Drawing.Point(47, 442)
+        Me.lblDescripcionPelicula.Location = New System.Drawing.Point(59, 400)
         Me.lblDescripcionPelicula.Name = "lblDescripcionPelicula"
         Me.lblDescripcionPelicula.Size = New System.Drawing.Size(304, 39)
         Me.lblDescripcionPelicula.TabIndex = 38
@@ -192,7 +167,7 @@ Partial Class ModificarPelicula
         '
         'txtLinkPelicula
         '
-        Me.txtLinkPelicula.Location = New System.Drawing.Point(59, 394)
+        Me.txtLinkPelicula.Location = New System.Drawing.Point(71, 352)
         Me.txtLinkPelicula.Name = "txtLinkPelicula"
         Me.txtLinkPelicula.Size = New System.Drawing.Size(320, 26)
         Me.txtLinkPelicula.TabIndex = 37
@@ -202,7 +177,7 @@ Partial Class ModificarPelicula
         Me.lblLinkPElicula.AutoSize = True
         Me.lblLinkPElicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblLinkPElicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblLinkPElicula.Location = New System.Drawing.Point(44, 346)
+        Me.lblLinkPElicula.Location = New System.Drawing.Point(56, 304)
         Me.lblLinkPElicula.Name = "lblLinkPElicula"
         Me.lblLinkPElicula.Size = New System.Drawing.Size(359, 39)
         Me.lblLinkPElicula.TabIndex = 36
@@ -210,30 +185,52 @@ Partial Class ModificarPelicula
         '
         'txtDescripcionPelicula
         '
-        Me.txtDescripcionPelicula.Location = New System.Drawing.Point(35, 490)
+        Me.txtDescripcionPelicula.Location = New System.Drawing.Point(47, 448)
         Me.txtDescripcionPelicula.Multiline = True
         Me.txtDescripcionPelicula.Name = "txtDescripcionPelicula"
         Me.txtDescripcionPelicula.Size = New System.Drawing.Size(368, 96)
         Me.txtDescripcionPelicula.TabIndex = 35
-        '
-        'cbxModificarPelicula
-        '
-        Me.cbxModificarPelicula.FormattingEnabled = True
-        Me.cbxModificarPelicula.Location = New System.Drawing.Point(251, 90)
-        Me.cbxModificarPelicula.Name = "cbxModificarPelicula"
-        Me.cbxModificarPelicula.Size = New System.Drawing.Size(368, 26)
-        Me.cbxModificarPelicula.TabIndex = 34
         '
         'lblModificarPelicula
         '
         Me.lblModificarPelicula.AutoSize = True
         Me.lblModificarPelicula.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblModificarPelicula.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblModificarPelicula.Location = New System.Drawing.Point(251, 42)
+        Me.lblModificarPelicula.Location = New System.Drawing.Point(32, 113)
         Me.lblModificarPelicula.Name = "lblModificarPelicula"
-        Me.lblModificarPelicula.Size = New System.Drawing.Size(348, 39)
+        Me.lblModificarPelicula.Size = New System.Drawing.Size(394, 39)
         Me.lblModificarPelicula.TabIndex = 33
-        Me.lblModificarPelicula.Text = "Contenido a modificar"
+        Me.lblModificarPelicula.Text = "ID-Contenido a modificar"
+        '
+        'txtDuracionPeliculaSegundos
+        '
+        Me.txtDuracionPeliculaSegundos.Location = New System.Drawing.Point(235, 256)
+        Me.txtDuracionPeliculaSegundos.Name = "txtDuracionPeliculaSegundos"
+        Me.txtDuracionPeliculaSegundos.Size = New System.Drawing.Size(156, 26)
+        Me.txtDuracionPeliculaSegundos.TabIndex = 52
+        Me.txtDuracionPeliculaSegundos.Text = "Segundos"
+        '
+        'txtGenero
+        '
+        Me.txtGenero.Location = New System.Drawing.Point(502, 256)
+        Me.txtGenero.Name = "txtGenero"
+        Me.txtGenero.Size = New System.Drawing.Size(320, 26)
+        Me.txtGenero.TabIndex = 53
+        '
+        'txtId
+        '
+        Me.txtId.Location = New System.Drawing.Point(71, 155)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(320, 26)
+        Me.txtId.TabIndex = 54
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Location = New System.Drawing.Point(35, 680)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 19)
+        Me.lblError.TabIndex = 55
         '
         'ModificarPelicula
         '
@@ -241,15 +238,16 @@ Partial Class ModificarPelicula
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(843, 705)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.txtId)
+        Me.Controls.Add(Me.txtGenero)
+        Me.Controls.Add(Me.txtDuracionPeliculaSegundos)
         Me.Controls.Add(Me.txtRepartoPelicula)
         Me.Controls.Add(Me.lblRepartoPelicula)
         Me.Controls.Add(Me.txtCalificacionPelicula)
         Me.Controls.Add(Me.lblCalificacionPelicula)
         Me.Controls.Add(Me.lblGeneroPelicula)
-        Me.Controls.Add(Me.cbxGeneroPelicula)
-        Me.Controls.Add(Me.txtFechaEstrenoPelicula)
-        Me.Controls.Add(Me.lblFechaEstrenoPelicula)
-        Me.Controls.Add(Me.txtDuracionPelicula)
+        Me.Controls.Add(Me.txtDuracionPeliculaMinutos)
         Me.Controls.Add(Me.lblDuracionPelicula)
         Me.Controls.Add(Me.txtTituloNuevoPelicula)
         Me.Controls.Add(Me.lblTituloNuevoPelicula)
@@ -258,7 +256,6 @@ Partial Class ModificarPelicula
         Me.Controls.Add(Me.txtLinkPelicula)
         Me.Controls.Add(Me.lblLinkPElicula)
         Me.Controls.Add(Me.txtDescripcionPelicula)
-        Me.Controls.Add(Me.cbxModificarPelicula)
         Me.Controls.Add(Me.lblModificarPelicula)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
@@ -279,10 +276,7 @@ Partial Class ModificarPelicula
     Friend WithEvents txtCalificacionPelicula As TextBox
     Friend WithEvents lblCalificacionPelicula As Label
     Friend WithEvents lblGeneroPelicula As Label
-    Friend WithEvents cbxGeneroPelicula As ComboBox
-    Friend WithEvents txtFechaEstrenoPelicula As TextBox
-    Friend WithEvents lblFechaEstrenoPelicula As Label
-    Friend WithEvents txtDuracionPelicula As TextBox
+    Friend WithEvents txtDuracionPeliculaMinutos As TextBox
     Friend WithEvents lblDuracionPelicula As Label
     Friend WithEvents txtTituloNuevoPelicula As TextBox
     Friend WithEvents lblTituloNuevoPelicula As Label
@@ -291,6 +285,9 @@ Partial Class ModificarPelicula
     Friend WithEvents txtLinkPelicula As TextBox
     Friend WithEvents lblLinkPElicula As Label
     Friend WithEvents txtDescripcionPelicula As TextBox
-    Friend WithEvents cbxModificarPelicula As ComboBox
     Friend WithEvents lblModificarPelicula As Label
+    Friend WithEvents txtDuracionPeliculaSegundos As TextBox
+    Friend WithEvents txtGenero As TextBox
+    Friend WithEvents txtId As TextBox
+    Friend WithEvents lblError As Label
 End Class

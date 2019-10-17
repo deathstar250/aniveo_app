@@ -26,9 +26,12 @@ Partial Class ListarComentarios
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.lblInfo2 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.IDColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContentColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lvlComenrarios = New System.Windows.Forms.ListView()
+        Me.idContenido = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.idComentario = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Contenido = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.usuario = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -75,26 +78,44 @@ Partial Class ListarComentarios
         Me.lblInfo2.Size = New System.Drawing.Size(0, 19)
         Me.lblInfo2.TabIndex = 14
         '
-        'ListView1
+        'lvlComenrarios
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IDColumnHeader1, Me.ContentColumnHeader1})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(166, 103)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(401, 379)
-        Me.ListView1.TabIndex = 15
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvlComenrarios.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.idContenido, Me.idComentario, Me.Contenido, Me.usuario})
+        Me.lvlComenrarios.HideSelection = False
+        Me.lvlComenrarios.Location = New System.Drawing.Point(53, 103)
+        Me.lvlComenrarios.Name = "lvlComenrarios"
+        Me.lvlComenrarios.Size = New System.Drawing.Size(635, 379)
+        Me.lvlComenrarios.TabIndex = 15
+        Me.lvlComenrarios.UseCompatibleStateImageBehavior = False
+        Me.lvlComenrarios.View = System.Windows.Forms.View.Details
         '
-        'IDColumnHeader1
+        'idContenido
         '
-        Me.IDColumnHeader1.Text = "ID"
-        Me.IDColumnHeader1.Width = 32
+        Me.idContenido.Text = "idContenido"
+        Me.idContenido.Width = 98
         '
-        'ContentColumnHeader1
+        'idComentario
         '
-        Me.ContentColumnHeader1.Text = "Comentario"
-        Me.ContentColumnHeader1.Width = 341
+        Me.idComentario.Text = "ID comentario"
+        Me.idComentario.Width = 116
+        '
+        'Contenido
+        '
+        Me.Contenido.Text = "Contenido"
+        Me.Contenido.Width = 315
+        '
+        'usuario
+        '
+        Me.usuario.Text = "Usuario"
+        Me.usuario.Width = 94
+        '
+        'lblError
+        '
+        Me.lblError.AutoSize = True
+        Me.lblError.Location = New System.Drawing.Point(12, 9)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(0, 19)
+        Me.lblError.TabIndex = 16
         '
         'ListarComentarios
         '
@@ -102,7 +123,8 @@ Partial Class ListarComentarios
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.lvlComenrarios)
         Me.Controls.Add(Me.lblInfo2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblInfo)
@@ -123,7 +145,10 @@ Partial Class ListarComentarios
     Friend WithEvents Button1 As Button
     Friend WithEvents lblInfo As Label
     Friend WithEvents lblInfo2 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents IDColumnHeader1 As ColumnHeader
-    Friend WithEvents ContentColumnHeader1 As ColumnHeader
+    Friend WithEvents lvlComenrarios As ListView
+    Friend WithEvents idContenido As ColumnHeader
+    Friend WithEvents idComentario As ColumnHeader
+    Friend WithEvents Contenido As ColumnHeader
+    Friend WithEvents usuario As ColumnHeader
+    Friend WithEvents lblError As Label
 End Class

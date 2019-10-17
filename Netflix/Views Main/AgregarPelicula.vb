@@ -40,7 +40,7 @@ Public Class AgregarPelicula
             resultado = cmd.ExecuteNonQuery()
 
             If (resultado >= 0) Then
-                lblError.Text = "Enhorabuena, usuario creado correctamente"
+                lblError.Text = "Enhorabuena, pelicula creada correctamente"
             Else
                 lblError.Text = "Error al crear pelicula"
             End If

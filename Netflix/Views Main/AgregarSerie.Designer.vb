@@ -23,10 +23,13 @@ Partial Class AgregarSerie
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtNombrePelicula = New System.Windows.Forms.TextBox()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtNombreSerie = New System.Windows.Forms.TextBox()
+        Me.txtNombreTemporada = New System.Windows.Forms.TextBox()
+        Me.LblError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -39,32 +42,6 @@ Partial Class AgregarSerie
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "◄"
         '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 3
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(261, 620)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(206, 44)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Subir"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(37, 94)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(295, 39)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Nombre contenido"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -73,27 +50,86 @@ Partial Class AgregarSerie
         Me.Label5.Size = New System.Drawing.Size(0, 19)
         Me.Label5.TabIndex = 15
         '
-        'txtNombrePelicula
+        'btnAceptar
         '
-        Me.txtNombrePelicula.BackColor = System.Drawing.SystemColors.MenuText
-        Me.txtNombrePelicula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtNombrePelicula.Font = New System.Drawing.Font("Arial", 10.25!)
-        Me.txtNombrePelicula.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.txtNombrePelicula.Location = New System.Drawing.Point(44, 136)
-        Me.txtNombrePelicula.Name = "txtNombrePelicula"
-        Me.txtNombrePelicula.Size = New System.Drawing.Size(261, 23)
-        Me.txtNombrePelicula.TabIndex = 14
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.btnAceptar.FlatAppearance.BorderSize = 3
+        Me.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.btnAceptar.Location = New System.Drawing.Point(271, 233)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(206, 44)
+        Me.btnAceptar.TabIndex = 17
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(94, 114)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(221, 39)
+        Me.Label4.TabIndex = 18
+        Me.Label4.Text = "Nombre serie"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(382, 114)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(309, 39)
+        Me.Label2.TabIndex = 19
+        Me.Label2.Text = "Nombre temporada"
+        '
+        'txtNombreSerie
+        '
+        Me.txtNombreSerie.BackColor = System.Drawing.SystemColors.MenuText
+        Me.txtNombreSerie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtNombreSerie.Font = New System.Drawing.Font("Arial", 10.25!)
+        Me.txtNombreSerie.ForeColor = System.Drawing.SystemColors.MenuBar
+        Me.txtNombreSerie.Location = New System.Drawing.Point(85, 169)
+        Me.txtNombreSerie.Name = "txtNombreSerie"
+        Me.txtNombreSerie.Size = New System.Drawing.Size(261, 23)
+        Me.txtNombreSerie.TabIndex = 20
+        '
+        'txtNombreTemporada
+        '
+        Me.txtNombreTemporada.BackColor = System.Drawing.SystemColors.MenuText
+        Me.txtNombreTemporada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtNombreTemporada.Font = New System.Drawing.Font("Arial", 10.25!)
+        Me.txtNombreTemporada.ForeColor = System.Drawing.SystemColors.MenuBar
+        Me.txtNombreTemporada.Location = New System.Drawing.Point(400, 169)
+        Me.txtNombreTemporada.Name = "txtNombreTemporada"
+        Me.txtNombreTemporada.Size = New System.Drawing.Size(261, 23)
+        Me.txtNombreTemporada.TabIndex = 21
+        '
+        'LblError
+        '
+        Me.LblError.AutoSize = True
+        Me.LblError.Location = New System.Drawing.Point(101, 60)
+        Me.LblError.Name = "LblError"
+        Me.LblError.Size = New System.Drawing.Size(0, 19)
+        Me.LblError.TabIndex = 22
         '
         'AgregarSerie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(726, 692)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtNombrePelicula)
+        Me.ClientSize = New System.Drawing.Size(726, 312)
+        Me.Controls.Add(Me.LblError)
+        Me.Controls.Add(Me.txtNombreTemporada)
+        Me.Controls.Add(Me.txtNombreSerie)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -108,8 +144,11 @@ Partial Class AgregarSerie
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtNombrePelicula As TextBox
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtNombreSerie As TextBox
+    Friend WithEvents txtNombreTemporada As TextBox
+    Friend WithEvents LblError As Label
 End Class

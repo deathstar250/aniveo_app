@@ -26,9 +26,14 @@ Partial Class ListarContenido
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.lblInfo2 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.IDColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContentColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lvContenido = New System.Windows.Forms.ListView()
+        Me.ID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Titulo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Genero = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.fecha = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Minutos = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Segundos = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.capitulo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -75,25 +80,52 @@ Partial Class ListarContenido
         Me.lblInfo2.Size = New System.Drawing.Size(0, 19)
         Me.lblInfo2.TabIndex = 14
         '
-        'ListView1
+        'lvContenido
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.IDColumnHeader1, Me.ContentColumnHeader1})
-        Me.ListView1.Location = New System.Drawing.Point(166, 103)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(401, 379)
-        Me.ListView1.TabIndex = 15
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvContenido.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ID, Me.Titulo, Me.Genero, Me.fecha, Me.Minutos, Me.Segundos, Me.capitulo})
+        Me.lvContenido.Location = New System.Drawing.Point(47, 103)
+        Me.lvContenido.Name = "lvContenido"
+        Me.lvContenido.Size = New System.Drawing.Size(667, 379)
+        Me.lvContenido.TabIndex = 15
+        Me.lvContenido.UseCompatibleStateImageBehavior = False
+        Me.lvContenido.View = System.Windows.Forms.View.Details
         '
-        'IDColumnHeader1
+        'ID
         '
-        Me.IDColumnHeader1.Text = "ID"
-        Me.IDColumnHeader1.Width = 32
+        Me.ID.DisplayIndex = 0
+        Me.ID.Text = "ID"
         '
-        'ContentColumnHeader1
+        'Titulo
         '
-        Me.ContentColumnHeader1.Text = "Contenido"
-        Me.ContentColumnHeader1.Width = 341
+        Me.Titulo.DisplayIndex = 1
+        Me.Titulo.Text = "Titulo"
+        Me.Titulo.Width = 111
+        '
+        'Genero
+        '
+        Me.Genero.DisplayIndex = 2
+        Me.Genero.Text = "Genero"
+        Me.Genero.Width = 92
+        '
+        'fecha
+        '
+        Me.fecha.DisplayIndex = 3
+        Me.fecha.Text = "fecha"
+        '
+        'Minutos
+        '
+        Me.Minutos.Text = "Minutos"
+        Me.Minutos.Width = 73
+        '
+        'Segundos
+        '
+        Me.Segundos.Text = "Segundos"
+        Me.Segundos.Width = 88
+        '
+        'capitulo
+        '
+        Me.capitulo.Text = "temporada"
+        Me.capitulo.Width = 124
         '
         'ListarContenido
         '
@@ -101,7 +133,7 @@ Partial Class ListarContenido
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvContenido)
         Me.Controls.Add(Me.lblInfo2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblInfo)
@@ -122,7 +154,12 @@ Partial Class ListarContenido
     Friend WithEvents Button1 As Button
     Friend WithEvents lblInfo As Label
     Friend WithEvents lblInfo2 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents IDColumnHeader1 As ColumnHeader
-    Friend WithEvents ContentColumnHeader1 As ColumnHeader
+    Friend WithEvents lvContenido As ListView
+    Friend WithEvents ID As ColumnHeader
+    Friend WithEvents Titulo As ColumnHeader
+    Friend WithEvents Genero As ColumnHeader
+    Friend WithEvents fecha As ColumnHeader
+    Friend WithEvents Minutos As ColumnHeader
+    Friend WithEvents Segundos As ColumnHeader
+    Friend WithEvents capitulo As ColumnHeader
 End Class
