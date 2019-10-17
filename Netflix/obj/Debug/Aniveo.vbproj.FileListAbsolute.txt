@@ -966,3 +966,8 @@ C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.exe
 C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Netflix.xml
 C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.pdb
 C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.AgregarSerie.resources
+C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\bin\Debug\Aniveo.exe.manifest
+C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\bin\Debug\Aniveo.application
+C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.exe.manifest
+C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.application
+C:\Users\Alumno\Desktop\ANIVEO\aniveo_app\Netflix\obj\Debug\Aniveo.AgregarNormal.resources

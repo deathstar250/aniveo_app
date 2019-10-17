@@ -39,6 +39,10 @@ Partial Class Adduser
         Me.txtContraseniaNuevaUsuario = New System.Windows.Forms.MaskedTextBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.lblError1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbxNormal = New System.Windows.Forms.CheckBox()
+        Me.cbxAdministrador = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -71,7 +75,7 @@ Partial Class Adduser
         Me.lblFechaNacimientoUsuario.AutoSize = True
         Me.lblFechaNacimientoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblFechaNacimientoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblFechaNacimientoUsuario.Location = New System.Drawing.Point(409, 241)
+        Me.lblFechaNacimientoUsuario.Location = New System.Drawing.Point(401, 198)
         Me.lblFechaNacimientoUsuario.Name = "lblFechaNacimientoUsuario"
         Me.lblFechaNacimientoUsuario.Size = New System.Drawing.Size(286, 39)
         Me.lblFechaNacimientoUsuario.TabIndex = 73
@@ -79,7 +83,7 @@ Partial Class Adduser
         '
         'txtApellidoNuevoUsuario
         '
-        Me.txtApellidoNuevoUsuario.Location = New System.Drawing.Point(43, 394)
+        Me.txtApellidoNuevoUsuario.Location = New System.Drawing.Point(35, 351)
         Me.txtApellidoNuevoUsuario.Name = "txtApellidoNuevoUsuario"
         Me.txtApellidoNuevoUsuario.Size = New System.Drawing.Size(322, 26)
         Me.txtApellidoNuevoUsuario.TabIndex = 2
@@ -89,7 +93,7 @@ Partial Class Adduser
         Me.lblApellidoNuevoUsuario.AutoSize = True
         Me.lblApellidoNuevoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblApellidoNuevoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblApellidoNuevoUsuario.Location = New System.Drawing.Point(66, 337)
+        Me.lblApellidoNuevoUsuario.Location = New System.Drawing.Point(58, 294)
         Me.lblApellidoNuevoUsuario.Name = "lblApellidoNuevoUsuario"
         Me.lblApellidoNuevoUsuario.Size = New System.Drawing.Size(140, 39)
         Me.lblApellidoNuevoUsuario.TabIndex = 71
@@ -97,7 +101,7 @@ Partial Class Adduser
         '
         'txtNombreNuevoUsuario
         '
-        Me.txtNombreNuevoUsuario.Location = New System.Drawing.Point(43, 297)
+        Me.txtNombreNuevoUsuario.Location = New System.Drawing.Point(35, 254)
         Me.txtNombreNuevoUsuario.Name = "txtNombreNuevoUsuario"
         Me.txtNombreNuevoUsuario.Size = New System.Drawing.Size(320, 26)
         Me.txtNombreNuevoUsuario.TabIndex = 1
@@ -107,7 +111,7 @@ Partial Class Adduser
         Me.lblNombreNuevoUsuario.AutoSize = True
         Me.lblNombreNuevoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblNombreNuevoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblNombreNuevoUsuario.Location = New System.Drawing.Point(66, 241)
+        Me.lblNombreNuevoUsuario.Location = New System.Drawing.Point(58, 198)
         Me.lblNombreNuevoUsuario.Name = "lblNombreNuevoUsuario"
         Me.lblNombreNuevoUsuario.Size = New System.Drawing.Size(138, 39)
         Me.lblNombreNuevoUsuario.TabIndex = 69
@@ -118,7 +122,7 @@ Partial Class Adduser
         Me.lblCorreiNuevoUsuario.AutoSize = True
         Me.lblCorreiNuevoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblCorreiNuevoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblCorreiNuevoUsuario.Location = New System.Drawing.Point(409, 133)
+        Me.lblCorreiNuevoUsuario.Location = New System.Drawing.Point(401, 90)
         Me.lblCorreiNuevoUsuario.Name = "lblCorreiNuevoUsuario"
         Me.lblCorreiNuevoUsuario.Size = New System.Drawing.Size(121, 39)
         Me.lblCorreiNuevoUsuario.TabIndex = 68
@@ -129,7 +133,7 @@ Partial Class Adduser
         Me.lblContraseniaNuevaUsuario.AutoSize = True
         Me.lblContraseniaNuevaUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblContraseniaNuevaUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblContraseniaNuevaUsuario.Location = New System.Drawing.Point(36, 432)
+        Me.lblContraseniaNuevaUsuario.Location = New System.Drawing.Point(28, 389)
         Me.lblContraseniaNuevaUsuario.Name = "lblContraseniaNuevaUsuario"
         Me.lblContraseniaNuevaUsuario.Size = New System.Drawing.Size(193, 39)
         Me.lblContraseniaNuevaUsuario.TabIndex = 66
@@ -137,20 +141,20 @@ Partial Class Adduser
         '
         'txtCorreoNuevoUsuario
         '
-        Me.txtCorreoNuevoUsuario.Location = New System.Drawing.Point(393, 189)
+        Me.txtCorreoNuevoUsuario.Location = New System.Drawing.Point(385, 146)
         Me.txtCorreoNuevoUsuario.Name = "txtCorreoNuevoUsuario"
         Me.txtCorreoNuevoUsuario.Size = New System.Drawing.Size(321, 26)
         Me.txtCorreoNuevoUsuario.TabIndex = 4
         '
         'calendar
         '
-        Me.calendar.Location = New System.Drawing.Point(405, 306)
+        Me.calendar.Location = New System.Drawing.Point(385, 246)
         Me.calendar.Name = "calendar"
         Me.calendar.TabIndex = 5
         '
         'TxtNombreUsuario
         '
-        Me.TxtNombreUsuario.Location = New System.Drawing.Point(45, 189)
+        Me.TxtNombreUsuario.Location = New System.Drawing.Point(37, 146)
         Me.TxtNombreUsuario.Name = "TxtNombreUsuario"
         Me.TxtNombreUsuario.Size = New System.Drawing.Size(320, 26)
         Me.TxtNombreUsuario.TabIndex = 0
@@ -160,7 +164,7 @@ Partial Class Adduser
         Me.lblNombreUsuario.AutoSize = True
         Me.lblNombreUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!)
         Me.lblNombreUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
-        Me.lblNombreUsuario.Location = New System.Drawing.Point(68, 133)
+        Me.lblNombreUsuario.Location = New System.Drawing.Point(60, 90)
         Me.lblNombreUsuario.Name = "lblNombreUsuario"
         Me.lblNombreUsuario.Size = New System.Drawing.Size(259, 39)
         Me.lblNombreUsuario.TabIndex = 0
@@ -169,14 +173,14 @@ Partial Class Adduser
         'lblErrorAgrgarUsuario
         '
         Me.lblErrorAgrgarUsuario.AutoSize = True
-        Me.lblErrorAgrgarUsuario.Location = New System.Drawing.Point(49, 536)
+        Me.lblErrorAgrgarUsuario.Location = New System.Drawing.Point(41, 493)
         Me.lblErrorAgrgarUsuario.Name = "lblErrorAgrgarUsuario"
         Me.lblErrorAgrgarUsuario.Size = New System.Drawing.Size(0, 19)
         Me.lblErrorAgrgarUsuario.TabIndex = 77
         '
         'txtContraseniaNuevaUsuario
         '
-        Me.txtContraseniaNuevaUsuario.Location = New System.Drawing.Point(43, 485)
+        Me.txtContraseniaNuevaUsuario.Location = New System.Drawing.Point(35, 442)
         Me.txtContraseniaNuevaUsuario.Name = "txtContraseniaNuevaUsuario"
         Me.txtContraseniaNuevaUsuario.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtContraseniaNuevaUsuario.Size = New System.Drawing.Size(322, 26)
@@ -199,12 +203,45 @@ Partial Class Adduser
         Me.lblError1.Size = New System.Drawing.Size(0, 19)
         Me.lblError1.TabIndex = 80
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.cbxAdministrador)
+        Me.GroupBox1.Controls.Add(Me.cbxNormal)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(385, 442)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.TabIndex = 81
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "TIpo de usaurio"
+        '
+        'cbxNormal
+        '
+        Me.cbxNormal.AutoSize = True
+        Me.cbxNormal.Location = New System.Drawing.Point(6, 35)
+        Me.cbxNormal.Name = "cbxNormal"
+        Me.cbxNormal.Size = New System.Drawing.Size(84, 23)
+        Me.cbxNormal.TabIndex = 0
+        Me.cbxNormal.Text = "Normal"
+        Me.cbxNormal.UseVisualStyleBackColor = True
+        '
+        'cbxAdministrador
+        '
+        Me.cbxAdministrador.AutoSize = True
+        Me.cbxAdministrador.Location = New System.Drawing.Point(6, 64)
+        Me.cbxAdministrador.Name = "cbxAdministrador"
+        Me.cbxAdministrador.Size = New System.Drawing.Size(135, 23)
+        Me.cbxAdministrador.TabIndex = 1
+        Me.cbxAdministrador.Text = "Administrador"
+        Me.cbxAdministrador.UseVisualStyleBackColor = True
+        '
         'Adduser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(726, 638)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblError1)
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.txtContraseniaNuevaUsuario)
@@ -223,12 +260,15 @@ Partial Class Adduser
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(26, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Adduser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "adduser"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -251,4 +291,7 @@ Partial Class Adduser
     Friend WithEvents txtContraseniaNuevaUsuario As MaskedTextBox
     Friend WithEvents lblError As Label
     Friend WithEvents lblError1 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents cbxAdministrador As CheckBox
+    Friend WithEvents cbxNormal As CheckBox
 End Class
